@@ -1,5 +1,5 @@
 module.exports = {
-  verbose: false,
+  verbose: true,
   preset: "jest-puppeteer",
-  //testEnvironment: "node",
+  testEnvironment: "node",
 };
