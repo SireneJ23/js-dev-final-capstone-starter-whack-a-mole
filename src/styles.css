@@ -183,7 +183,6 @@ a.nav-link:hover {
 .wrapper {
   max-width: 600px;
   margin: auto;
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -195,7 +194,6 @@ a.nav-link:hover {
   height: 91vh;
 }
 .header {
-  /* width: 60%; */
   display: flex;
   padding: 20px;
   text-align: center;
@@ -390,7 +388,6 @@ h5 {
 
 .hole.show .mole {
   top: 0;
-  /*transform: scale(1.1);*/
 }
 .footer {
   position: fixed;
