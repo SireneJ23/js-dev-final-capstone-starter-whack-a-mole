@@ -388,7 +388,7 @@ function pauseGame() {
     startTimer();
     showUp();
     audioSong.play();
-    audioSong.volume = 0.3;
+    audioSong.volume = 0.2;
     pause.textContent = "Pause";
   }
 }
