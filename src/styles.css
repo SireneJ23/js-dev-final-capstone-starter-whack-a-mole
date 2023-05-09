@@ -244,6 +244,7 @@ a.nav-link:hover {
 #score,
 #timer {
   font-size: 2.5rem;
+  font-weight: 600;
 }
 h2,
 #score,
@@ -251,12 +252,13 @@ h2,
   text-align: center;
   letter-spacing: 1px;
   padding: 0 10px;
-  margin: 20px 10px 0 10px;
+  margin: 20px 0;
   cursor: auto;
 }
 h2 {
   font-size: 2rem;
-  margin: 20px 10px 0 10px;
+  font-weight: 600;
+  /* margin: 20px 10px 0 10px; */
   text-shadow: 1px 1px 1px #fff;
   color: #000;
   box-shadow: 30px 0 50px rgb(0, 0, 0.1);
@@ -419,5 +421,116 @@ h5 {
 @media screen and (min-width: 1100px) {
   .wrapper {
     justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  .hole {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 675px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .header {
+    margin: 20px 0;
+  }
+  #title {
+    font-size: 2.5rem;
+  }
+  .grid {
+    width: 90%;
+  }
+  .hole {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .header {
+    margin: 20px 0;
+  }
+  #title {
+    font-size: 3rem;
+  }
+  #scoreBoard {
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  #score,
+  #timer {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .btn {
+    margin: 10px 10px 10px 10px;
+    /* font-size: 1.5rem; */
+    padding: 6px 15px;
+    display: inline-block;
+  }
+  #start,
+  #pause,
+  #stop {
+    font-size: 1.5rem;
+  }
+  .grid {
+    width: 75%;
+  }
+  .hole {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .header {
+    margin: 20px 0;
+  }
+  #title {
+    font-size: 3rem;
+  }
+  #scoreBoard {
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  #score,
+  #timer {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .btn {
+    margin: 30px 10px 30px 10px;
+    /* font-size: 1.5rem; */
+    padding: 6px 15px;
+    display: inline-block;
+  }
+  #start,
+  #pause,
+  #stop {
+    font-size: 1.5rem;
+  }
+  .grid {
+    width: 100%;
+  }
+  .hole {
+    width: 80px;
+    height: 80px;
   }
 }
