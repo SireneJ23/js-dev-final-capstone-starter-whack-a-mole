@@ -287,12 +287,7 @@ function whack(event) {
   // TODO: Write your code here.
   updateScore();
   audioHit.play(); //optional
-  this.style.backgroundImage = 'url("../assets/wmole.png")';
-  this.style.pointerEvents = "none";
-  setTimeout(() => {
-    this.style.backgroundImage = 'url("../assets/mole.png")';
-    this.style.pointerEvents = "all";
-  }, 800);
+
   return points;
 }
 
