@@ -240,7 +240,6 @@ function startGame() {
 
   return "game started";
 }
-//console.log(startGame());
 
 /**
  *
@@ -254,7 +253,7 @@ function startGame() {
  */
 function updateScore() {
   // TODO: Write your code here
-  points++;
+  points += 10;
   score.textContent = points;
 
   return points;
@@ -356,7 +355,7 @@ function stopGame() {
   clearInterval(timer);
   audioSong.pause();
   audioHit.pause();
-  if (points >= 25) {
+  if (points >= 250) {
     alert("Congratulations! You won the game! You are a true mole whacker!");
     audioVictory.play();
     audioApplause.play(); // audio
