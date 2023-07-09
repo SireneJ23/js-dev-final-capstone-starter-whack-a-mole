@@ -282,12 +282,36 @@ function clearScore() {
  * the moles.
  *
  */
-function whack(event) {
+function whack(e) {
   // TODO: Write your code here.
   updateScore();
   audioHit.play(); //optional
 
+  score.textContent = points;
+
+  this.style.backgroundImage = 'url("../assets/wmole.png")';
+  this.style.pointerEvents = "none";
+
+  setTimeout(() => {
+    resetMoleAppearance(this);
+    enablePointerEvents(this);
+  }, 800);
+
   return points;
+}
+/**
+ *
+ *Splitting the functionality into separate functions *for better organization and maintainability.
+ *Added descriptive function names (resetMoleAppearance, *enablePointerEvents) to improve code readability.
+ *Moved repetitive style assignments into their own functions (resetMoleAppearance, enablePointerEvents) for reusability.
+ *
+ */
+function resetMoleAppearance(mole) {
+  mole.style.backgroundImage = 'url("../assets/mole.png")';
+}
+
+function enablePointerEvents(element) {
+  element.style.pointerEvents = "all";
 }
 
 /**
