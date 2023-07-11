@@ -63,20 +63,27 @@ function play() {
 }
 
 const mixBut = document.getElementById("mixBut");
-mixBut.addEventListener("click", Start);
-function Start() {
-  mixBut.removeEventListener("click", Start);
-  mixBut.addEventListener("click", Stop);
-  mixBut.value == "Stop";
-  mixBut.textContent = "Sound" + " " + "▶️";
+mixBut.addEventListener("click", start);
+
+function start() {
+  mixBut.removeEventListener("click", start);
+  mixBut.addEventListener("click", stop);
+
+  mixBut.value = "Stop";
+  mixBut.textContent = "Sound ▶️";
+
   audioSong.play();
 }
-function Stop() {
-  mixBut.removeEventListener("click", Stop);
-  mixBut.addEventListener("click", Start);
+
+function stop() {
+  mixBut.removeEventListener("click", stop);
+  mixBut.addEventListener("click", start);
+
   mixBut.value = "Start";
-  mixBut.textContent = "Sound" + " " + "⏸️";
+  mixBut.textContent = "Sound ⏸️";
+
   audioSong.pause();
+  audioHit.pause();
 }
 
 startButton.addEventListener("click", startGame);
