@@ -149,8 +149,11 @@ function chooseHole(holes) {
   if (hole === lastHole) {
     return chooseHole(holes);
   }
+  else {
   lastHole = hole;
   return hole;
+}
+
 }
 /**
  *
@@ -173,8 +176,7 @@ function toggleVisibility(hole) {
  *
  */
 function showAndHide(hole, delay) {
-  toggleVisibility(hole);
-  /* TODO: call the toggleVisibility function so that it adds the 'show' class.*/
+    /* TODO: call the toggleVisibility function so that it adds the 'show' class.*/
   const timeoutID = setTimeout(() => {
     toggleVisibility(hole);
     /* TODO: call the toggleVisibility function so that it removes the 'show' class when the timer times out.*/
