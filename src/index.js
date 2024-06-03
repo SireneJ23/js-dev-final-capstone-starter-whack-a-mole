@@ -46,7 +46,7 @@ let timer;
 let timeoutID;
 let lastHole = 0;
 let points = 0;
-let difficulty = "normal";
+let difficulty = "easy";
 
 function playAudio(audioObject) {
   audioObject.play();
